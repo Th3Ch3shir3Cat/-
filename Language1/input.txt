@@ -1,0 +1,38 @@
+float globalA;
+float globalB;
+globalA = 10.02;
+globalB = globalA;
+
+float function(){
+globalA = globalA + globalA;
+float funcB;
+funcB = 30.12;
+float funcC;
+funcC = 44.25;
+return globalA;
+globalA = funcB + funcC;
+return globalA;
+}
+
+__int64 main(){
+float MainA;
+__int64 MainB, MainC;
+__int64 abcdef; 
+MainA = 4.33;
+MainB = 11;
+MainC = 4;
+abcdef = 123;
+MainA = function();
+switch(MainB){
+	case 11:
+		MainA = function();
+		break;
+	case 2:
+		MainA = function();
+		MainC = 33;
+		break;
+	default:
+		MainA = function();
+		break;
+};
+}
